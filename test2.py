@@ -3,10 +3,10 @@ from selenium.webdriver.common.keys import Keys
 
 
 
-    def setUp(self):
+   
         self.driver = webdriver.Firefox()
 
-    def test_search_in_python_org(self):
+   
         driver = self.driver
         driver.get("http://www.python.org")
         self.assertIn("Python", driver.title)
@@ -15,6 +15,3 @@ from selenium.webdriver.common.keys import Keys
         elem.send_keys(Keys.RETURN)
         assert "No results found." not in driver.page_source
 
-
-    def tearDown(self):
-        self.driver.close()
