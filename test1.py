@@ -1,5 +1,4 @@
 #!/usr/local/bin/python
-...
 from selenium import webdriver  
 from pyvirtualdisplay import Display  
 display = Display(visible=0, size=(800, 800))  
