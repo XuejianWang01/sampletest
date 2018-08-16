@@ -18,6 +18,7 @@ driver = webdriver.Chrome('/bin/chromedriver',
 #open connection
 # driver = webdriver.Chrome()
 #open chrome to first page
-driver.get('https://www.reiners.io')  
+driver.get('https://www.rbaidu.com')  
+elem = driver.find_element_by_key("kw")
 driver.close()  
 display.stop()  
