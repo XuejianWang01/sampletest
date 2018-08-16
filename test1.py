@@ -20,9 +20,9 @@ driver = webdriver.Chrome('/bin/chromedriver',
 #open chrome to first page
 driver.get('https://www.rbaidu.com')  
 elem1 = driver.find_element_by_id("kw")
-elem1.send_keys("pycon")
+print(elem1)
 
 elem2 = driver.find_element_by_id("su")
-elem2.click()
+print(elem2)
 driver.close()  
 display.stop()  
