@@ -19,10 +19,5 @@ driver = webdriver.Chrome('/bin/chromedriver',
 # driver = webdriver.Chrome()
 #open chrome to first page
 driver.get('https://www.rbaidu.com')  
-elem1 = driver.find_element_by_id("kw")
-print(elem1)
-
-elem2 = driver.find_element_by_id("su")
-print(elem2)
 driver.close()  
 display.stop()  
