@@ -18,6 +18,6 @@ driver = webdriver.Chrome('/bin/chromedriver',
 #open connection
 # driver = webdriver.Chrome()
 #open chrome to first page
-driver.get('https://www.rbaidu.com')  
+driver.get('https://www.baidu.com')  
 driver.close()  
 display.stop()  
