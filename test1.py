@@ -3,7 +3,7 @@ from selenium import webdriver
 from pyvirtualdisplay import Display  
 display = Display(visible=0, size=(800, 800))  
 display.start()  
----
+
 #
 outputdir = "/tmp"  
 options = webdriver.ChromeOptions()  
@@ -18,6 +18,9 @@ driver = webdriver.Chrome('/bin/chromedriver',
 #open connection
 # driver = webdriver.Chrome()
 #open chrome to first page
-driver.get('https://www.reiners.io')  
+driver.get('https://www.baidu.com')
+driver.find_element_by_id("kw").click()
+driver.find_element_by_id("kw").send_keys('PwC')
+driver.find_element_by_id("su").click()  
 driver.close()  
 display.stop()  
