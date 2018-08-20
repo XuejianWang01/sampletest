@@ -1,6 +1,7 @@
 #!/usr/local/bin/python
 from selenium import webdriver  
-from pyvirtualdisplay import Display  
+from pyvirtualdisplay import Display
+from time import sleep
 display = Display(visible=0, size=(800, 800))  
 display.start()  
 
@@ -18,7 +19,8 @@ driver = webdriver.Chrome('/bin/chromedriver',
 #open connection
 # driver = webdriver.Chrome()
 #open chrome to first page
-driver.get('https://www.rbaidu.com')
+driver.get('https://www.baidu.com')
+sleep(2)
 driver.find_element_by_id("kw").click()
 driver.find_element_by_id("kw").send_keys('PwC')
 driver.find_element_by_id("su").click() 
