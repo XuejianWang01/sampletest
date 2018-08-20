@@ -18,9 +18,9 @@ driver = webdriver.Chrome('/bin/chromedriver',
 #open connection
 # driver = webdriver.Chrome()
 #open chrome to first page
-driver.get('https://www.baidu.com')
+driver.get('https://www.rbaidu.com')
 driver.find_element_by_id("kw").click()
 driver.find_element_by_id("kw").send_keys('PwC')
-driver.find_element_by_id("su").click()  
+driver.find_element_by_id("su").click() 
 driver.close()  
 display.stop()  
